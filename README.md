@@ -1,6 +1,8 @@
 # FloraScan Expo Mobile App
 
 > **Note**: This repository contains the public version of the **FloraScan** Expo mobile application, developed as part of my Final Year Project (FYP).
+> **Note**: This repository contains the public version of the **FloraScan** Expo mobile application, developed as part of my Final Year Project (FYP).
+> **Note**: This repository contains the public version of the **FloraScan** Expo mobile application, developed as part of my Final Year Project (FYP).
 
 FloraScan is an Expo-based React Native mobile application designed to detect plant species and identify plant diseases using machine learning models, offering offline inference, historical logging, and interactive care instructions.
 
