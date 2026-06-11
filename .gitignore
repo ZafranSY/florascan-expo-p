@@ -1,0 +1,151 @@
+# FloraScan Expo - React Native Mobile App .gitignore
+
+# ============================================
+# Dependencies
+# ============================================
+
+node_modules/
+.pnp.*
+.yarn/install-state.gz
+package-lock.json
+
+# ============================================
+# Expo
+# ============================================
+
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.expo-shared/
+
+# ============================================
+# Native Build Outputs (generated via prebuild)
+# ============================================
+
+/ios/
+/android/
+.kotlin/
+*.orig.*
+
+# ============================================
+# Environment Variables & Secrets
+# ============================================
+
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Firebase credentials (SENSITIVE - NEVER COMMIT)
+*firebase*.json
+firebase-credentials.json
+*-firebase-adminsdk-*.json
+google-services.json
+GoogleService-Info.plist
+
+# ============================================
+# Signing Keys
+# ============================================
+
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.keystore
+
+# ============================================
+# Local Database (SQLite)
+# ============================================
+
+*.db
+*.sqlite
+*.sqlite3
+florascan.db
+
+# ============================================
+# ML Model Assets (Large files)
+# ============================================
+
+src/assets/models/*.bin
+src/assets/models/*.tflite
+# Keep model.json (small metadata file)
+!src/assets/models/model.json
+
+# ============================================
+# Metro Bundler
+# ============================================
+
+.metro-health-check*
+
+# ============================================
+# Debug Logs
+# ============================================
+
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# ============================================
+# TypeScript
+# ============================================
+
+*.tsbuildinfo
+
+# ============================================
+# IDE / Editor
+# ============================================
+
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ============================================
+# OS Files
+# ============================================
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# Testing
+# ============================================
+
+coverage/
+.jest/
+
+# ============================================
+# Misc
+# ============================================
+
+app-example/
+*.tmp
+*.temp
+*.bak
+
+# ============================================
+# Keep Important Files
+# ============================================
+
+!.env.example
+!.env.template

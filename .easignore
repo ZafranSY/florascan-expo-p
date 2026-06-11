@@ -1,0 +1,101 @@
+# FloraScan Expo - EAS Build Ignore Configuration
+# Based on .gitignore but allows .env to be sent to EAS Build
+
+# Dependencies
+node_modules/
+.pnp.*
+.yarn/install-state.gz
+package-lock.json
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.expo-shared/
+
+# Native Build Outputs
+/ios/
+/android/
+.kotlin/
+*.orig.*
+
+# Environment Variables & Secrets
+# Note: We comment out .env so EAS CLI uploads the local .env file to the build server
+# .env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Firebase credentials
+*firebase*.json
+firebase-credentials.json
+*-firebase-adminsdk-*.json
+google-services.json
+GoogleService-Info.plist
+
+# Signing Keys
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.keystore
+
+# Local Database
+*.db
+*.sqlite
+*.sqlite3
+florascan.db
+
+# ML Model Assets (Large files)
+src/assets/models/*.bin
+src/assets/models/*.tflite
+!src/assets/models/model.json
+
+# Metro Bundler
+.metro-health-check*
+
+# Debug Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.directory
+.Trash-*
+
+# Testing
+coverage/
+.jest/
+
+# Misc
+app-example/
+*.tmp
+*.temp
+*.bak
+
+!.env.example
+!.env.template
